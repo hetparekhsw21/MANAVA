@@ -1,0 +1,647 @@
+body{
+
+  font-family: 'Montserrat';
+  
+}
+
+/* Testimonials*************************************************************************************************************************************************/
+
+#testimonial-container{
+
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  margin-top: 25px;
+
+}
+#part2{
+
+display: flex;
+justify-content: space-between;
+
+}
+
+#testimonials{
+
+  margin-top: 25px;
+  padding: 1px;
+  background-color: #3a4257;
+  color: white;
+
+}
+
+.testimonial-parts{
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+
+}
+
+/* best sellers  ***********************************************************************************************************************************************/
+.Best-sellers-container{
+
+  margin-top: 25px;
+  padding: 2%;
+  height: auto;
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  justify-content:space-evenly;
+
+}
+
+.Best-sellers-container::-webkit-scrollbar-track
+{
+	/* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.Best-sellers-container::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+.Best-sellers-container::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	/* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); */
+	background-color: #3a4257;
+}
+
+
+.prize{
+
+  text-align: left;
+
+}
+
+.product-card{
+
+  min-width: 20%;
+  background: rgb(255, 255, 255);
+  padding: 2%;
+  margin: 0% 4% 0% 4%;
+  height: auto;
+  transition: transform .2s;
+  box-shadow: 0 4px 8px 0 #3A4257;
+  border-radius: 2%;
+
+}
+
+.product-card img {
+
+  border-radius: 2%;
+
+}
+
+.product-card-buy-button{
+
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+
+}
+
+.product-card-buy-button button{
+
+background-color: #3A4257;
+color: white;
+margin: 1%;
+border: none;
+border-radius: 0.5rem;
+
+}
+
+#trending{
+
+  margin-top: 50px;
+  padding: 1px;
+  background-color: #3a4257;
+  color: white;
+  justify-content: center;
+  display: flex;
+
+}
+
+.product-card-text{
+
+  margin-top: 3%;
+  text-align: left;
+  font-size: 2rem;
+
+}
+
+.product-card-text a {
+
+text-decoration: none;
+color: #000;
+
+}
+
+.product-card-text a:hover{
+
+color: #000;
+
+}
+
+/* login page  ********************************************************************************************************************************************/
+    
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	font-weight: bold;
+	margin: 0;
+}
+
+#SignUp-button{
+
+  border-radius: 20px;
+	border: 1px solid #3a4257;
+	background-color: #3a4257;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+  margin-top: 1%;
+
+}
+
+.SignUp-page-button{
+
+  border-radius: 20px;
+	border: none;
+	color: black;
+  background-color: white;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 10px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+
+}
+
+#login-button{
+
+  border-radius: 20px;
+	border: 1px solid #3a4257;
+	background-color: #3a4257;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+
+}
+
+#page{
+  /* 767 break point  */
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+
+}
+
+form {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+
+.container {
+	background-color: #fff;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	max-width: 100%;
+	min-height: 480px;
+}
+
+.form-container {
+	position: absolute;
+	top: 0;
+	height: 100%;
+}
+
+.log-in-container {
+	left: 0;
+	width: 50%;
+	z-index: 2;
+}
+
+
+.overlay-container {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+}
+
+
+.overlay {
+	background: #3a4257;
+	background: -webkit-linear-gradient(to right, #323e5e, #373d4e);
+	background: linear-gradient(to right,white , #ff5e9a);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	color: #FFFFFF;
+	position: relative;
+	left: -100%;
+	height: 100%;
+	width: 200%;
+}
+
+.overlay-panel {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	top: 0;
+	height: 100%;
+	width: 50%;
+}
+
+
+.overlay-right {
+	right: 0;
+}
+
+
+.social-container {
+	margin: 50px 0;
+}
+
+.social-container a {
+	border: 1px solid #DDDDDD;
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5px;
+	height: 40px;
+	width: 40px;
+}
+
+/* ctagories container css  ***********************************************************************************************************************************/
+
+.categories-card-container{
+
+  display: flex;
+  justify-content:space-evenly;
+  width: 100%;
+  height: auto;
+
+}
+
+.card img{
+
+  max-width: 100%;
+  height: auto;
+
+}
+
+.card {
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 20%;
+  background-color: white;
+  /* display: inline-block; */
+  height: auto;
+  text-align: center;
+  padding: 2%;
+}
+
+.card a {
+  color: black;
+  text-decoration: none;
+}
+
+/* mouse over link */
+.card a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.card-text{
+
+  padding-left: 10%;
+  padding-bottom: 5%;
+  text-align: left;
+  color: black;
+  font-size: 2rem;
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+
+/* slideshow css  ****************************************************************************************************************************************/
+
+* {box-sizing: border-box;}
+.mySlides {
+  justify-self: center;
+  width: auto;
+  height: 100%;
+  display: none;
+}
+.mySlides img{
+
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+
+}
+
+/* Slideshow container css */
+
+.slideshow-container {
+  justify-self: center;
+  height: 400px ;
+  max-width: 60% ;
+  position:static;
+  margin-top: 100px;
+  background-color: inherit;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  align-self: center;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0.4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+ /* header ***************************************************************************************************************************************************/
+
+  #home{
+    /* overflow: hidden; */
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /*Full width*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+    display: flex;
+    justify-content:space-evenly;
+    height: 6rem;
+    align-items: center;
+    background-color:white;
+    color: black; 
+  }
+
+  .logo{
+
+    border-radius: 100%;
+    width:4.5rem;
+    height:4.5rem;
+
+  }
+
+  /* login dropdown */
+
+  /* .dropdown {
+    float: left;
+    overflow: hidden;
+  } */
+
+  #userLogo{
+
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: #3a4257;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+
+  }
+  
+  /* .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  } */
+
+  .dropdown-content {
+    display: none;
+    position:relative;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: left;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  #userLogo:hover {
+    background-color: #3e8e41;
+    display:block;
+  }
+  /* .dropbtn:hover .dropdown-content {
+
+    background-color: #3e8e41;
+    display:inline-table;
+    
+  } */
+/* by raveena for testing*/
+/* Dropdown Button */
+.dropbtn {
+  background-color: #3498DB;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+/*testing end*/
+  /* login dropdown stop  */
+
+
+
+  #heading{
+    display: flex;
+    justify-content:space-evenly;
+  }
+  #heading a{
+
+    text-decoration: none;
+    color: #000;
+
+  }
+
+  #heading a:hover{
+
+    text-decoration: none;
+    color: #000;
+
+  }
+  #head-login-button{
+
+    border-radius: 1rem;
+    border:none;
+    height:3rem;
+    background-color: #3a4257;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+
+  #searchbar{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+  }
+
+  #searchbar input {
+
+    border: none;
+	vertical-align: middle;
+	border-radius: 1rem;
+	height: 2.5rem;
+	border-right: none;
+
+  }
+
+  #searchbar input:focus {
+
+    outline: none;
+
+  }
+
+
+  #loginAndCart{
+
+    display: flex; 
+    float: right;
+    align-items: center;
+  }
+
+  .fa{
+
+    /* margin-top: 10px; */
+    width: auto;
+    height: auto;
+
+  }

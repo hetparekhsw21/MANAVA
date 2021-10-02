@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html><title> home page </title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="..//folder css/vs.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
+<body style="background-color: #fce4ed;" onload="OnLoadLoginPage()" >
+  
+<center>
+  <!-- *************************************************************************************************************************************login page  -->
+
+  <!-- <div id="page" >
+  <div class="container" id="container">
+		<div class="form-container log-in-container">
+      
+			<form action="#" id="Login" style="display:none;"> 
+				<h1>Login</h1>
+				<div class="social-container">
+					<a href="#" class="social"><i class="fa fa-facebook fa-2x"></i></a>
+					<a href="#" class="social"><i class="fab fa fa-twitter fa-2x"></i></a>
+				</div>
+				<span>or use your account</span>
+				<input type="email" placeholder="email" id="Login_email" />
+				<input type="password" placeholder="password" id="Login_password" />
+        <div style="display: flex;justify-content: space-between;width: 100%;margin-top: 5px;">
+          <button class="SignUp-page-button" onclick="signinPage()">Sign Up?</button>
+				<a href="#">Forgot your password?</a>
+      </div>
+				<button onclick="Login()" id="login-button" value="submit" >Log In</button>
+			</form> -->
+
+<!-- ***********************************************************************************************************************************************SignUp -->
+
+      <!-- <form action="#" id="SignUp" > 
+				<h1>Sign Up</h1>
+				<div class="social-container">
+					<a href="#" class="social"><i class="fa fa-facebook fa-2x"></i></a>
+					<a href="#" class="social"><i class="fab fa fa-twitter fa-2x"></i></a>
+				</div>
+				<span>or use your account</span>
+				<input type="email" placeholder="email" id="SignUp_email" />
+				<input type="password" placeholder="password" id="SignUp_password" />
+        <input type="mobile number" placeholder="Number" />
+        <div style="display: flex;justify-content: space-between;width: 100%;margin-top: 5px;">
+      </div>
+      <div style="display: flex;justify-content: space-between;width: 100%;margin-top: 5px;">
+        <button  class="SignUp-page-button" onclick="loginPage()">Login ?</button>
+    </div>
+				<button onclick="signUp()" id="SignUp-button" value="submit" >SignUp</button>
+			</form>
+
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-right">
+					<h1 style="color: black;">Welcome !!!</h1>
+					<p style="color: black;">Your favorite Instagram shop now on the Web </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> -->
+  <!-- **********************************************************************************************************************************************header  -->
+
+  <div id="home"> 
+
+  <div id="ii">
+    <div class="logo">
+      <a href="..//folder html/vs.html"><img style="width: 4.5rem;height: 4.5rem;border-radius: 100%;" src="..//product images/logo.png" alt="logo"></a>     
+    </div>
+  </div>
+
+  <div id="heading">
+    <a href="..//folder html/vs.html" style="font-size: 3rem;"> M A N A V A </a>
+    <div id="searchbar">
+    <input style="height: 2rem;border-right: none;" type="searchbar" style="border-radius: 1rem;height: min-content;" placeholder="Search">
+    <button style="background-color: inherit;border: none;" type="submit"><i class="fa fa-search"></i></button>
+    </div>
+  </div>
+
+
+<div id="loginAndCart">
+  <button id="head-signout-button" onclick="signOut();document.getElementById('page').style.display='block';document.getElementById('Login').style.display='';document.getElementById('SignUp').style.display=''">signOut</button>
+  <button id="head-login-button" onclick="document.getElementById('page').style.display='block';document.getElementById('Login').style.display='';document.getElementById('SignUp').style.display=''">Log In</button>
+  
+  <div class="dropdown"> 
+    <!-- id="userLogo" <i class="fa fa-user fa-2x"></i>  style="display: none;" --> 
+    <button id="userLogo" onclick="myFunction()" class="dropbtn"><i class="fa fa-user fa-2x"></i></button>&nbsp;
+    <div id="myDropdown" class="dropdown-content"  >
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+
+  <a id="cartIcon" style="font-size:24px; margin-right: 2rem;text-decoration: none; color: black; " href="#" class="fa" >&#xf07a; Cart</a>
+  </div>
+</div>
+
+  <!-- **********************************************************************************************************************************slideshow container -->
+ 
+  <div class="slideshow-container">
+
+    <div class="mySlides" style="width:100%">
+      <img src="..//product images/logo.png" style="width: auto;" >
+    </div>
+    
+    <div class="mySlides" style="width:100%">
+      <img src="..//product images/beaded.JPG" >
+    </div>
+    
+    <div class="mySlides" style="width:100%">
+      <img src="..//product images/IMG20210827163817.jpg" >
+    </div>
+    
+    </div>
+    <br>
+    <br>
+ 
+    <!-- **************************************************************************dots -->
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+
+    <br>
+    <br>
+
+    <!-- ***************************************************************************************************************************categories card container -->
+
+    <div class="categories-card-container">
+
+    <div class="card" >
+      <img src="..//product images/IMG20210827163817.jpg"  style="width:100%">
+      <h2 > <a href="..//folder html/Jewellery.html">Jewellery</a></h2>
+
+      <div class="card-text">
+        <p><a href="#">Necklaces</a></p>
+        <p><a href="#">Bracelets & Anklets</a></p>
+        <p><a href="#">Rings</a></p>
+        <p><a href="#">Mask & Eyeglass Chain</a></p>
+    </div>
+    </div>
+
+    <div class="card" >
+      <img src="..//product images/beaded.JPG"  style="width:100%">
+      <h2><a href="#">Beaded Jewellery</a></h2>
+
+      <div class="card-text">
+        <p><a href="#">Necklaces</a></p>
+        <p><a href="#">Bracelets & Anklets</a></p>
+        <p><a href="#">Rings</a></p>
+        <p><a href="#">Mask & Eyeglass Chain</a></p>
+      </div>
+      </div>
+
+    <div class="card" >
+      <img src="..//product images/IMG20210827163625.jpg"  style="width:100%">
+      <h2><a href="#">Fusion Jewellery</a></h2>
+
+      <div class="card-text">
+        <p><a href="#">Necklaces</a></p>
+        <p><a href="#">Bracelets & Anklets</a></p>
+        <p><a href="#">Mask & Eyeglass Chain</a></p>
+      </div>
+      </div>
+
+  </div>
+
+
+
+  <!-- *****************************************************************************************************************************************Best-sellers  -->
+
+  <div id="trending">
+
+    <p style="padding-top:15px;align-self: center;font-size: 3srem; font-family: 'Roboto';font-weight: bold;font-size:xx-large;">TRENDING PRODUCTS</p>
+
+  </div>
+
+  <div class="Best-sellers-container">
+<!-- ***********************************************************************************************1 -->
+      <div class="product-card"  id="product-card" >
+        <img src="..//pproj/product images/IMG20210827163817.jpg"  style="width:100%">
+        
+       <div class="product-card-text">
+          <p><a href="#">Necklace</a> with butterfly pendent</p>
+      </div>
+
+      <div class="prize">
+        <h3>₹150</h3>
+      </div>
+
+      <div class="product-card-buy-button">
+        <button  >Buy</button>
+        <button  ><a class="fa">&#xf07a;</a> Add to cart</button>
+      </div>
+
+      </div>
+<!-- **********************************************************************************************2 -->
+      
+<div class="product-card"  id="product-card" >
+  <img src="..//product images/Pearl Butterfly.jpg"  style="width:100%">
+  
+ <div class="product-card-text">
+    <p><a href="#">Pearl Necklace</a> with Black Butterfly </p>
+</div>
+
+<div class="prize">
+  <h3>₹150</h3>
+</div>
+
+<div class="product-card-buy-button">
+  <button  >Buy</button>
+  <button  ><a class="fa">&#xf07a;</a> Add to cart</button>
+</div>
+
+</div>
+
+
+<!-- ********************************************************************************************3 -->
+     
+<div class="product-card"  id="product-card" >
+  <img src="..//product images/Dual Chain Lock.jpg"  style="width:100%">
+  
+ <div class="product-card-text">
+    <p><a href="#">Necklace</a> with Dual Chain Lock </p>
+</div>
+
+<div class="prize">
+  <h3>₹150</h3>
+</div>
+
+<div class="product-card-buy-button">
+  <button  >Buy</button>
+  <button  ><a class="fa">&#xf07a;</a> Add to cart</button>
+</div>
+
+</div>
+
+<!-- *******************************************************************************************4 -->
+      
+<div class="product-card"  id="product-card" >
+  <img src="..//product images/Pearl Daisy.jpg"  style="width:100%">
+  
+ <div class="product-card-text">
+    <p><a href="#">Pearl Necklace</a> with Black daisy pendent</p>
+</div>
+
+<div class="prize">
+  <h3>₹150</h3>
+</div>
+
+<div class="product-card-buy-button">
+  <button  >Buy</button>
+  <button  > <a class="fa">&#xf07a;</a> Add to cart</button>
+</div>
+</div>
+
+
+  <!-- **************************************************************************************5 -->
+  
+    <div class="product-card"  id="product-card" >
+      <img src="..//product images/IMG20210827163817.jpg"  style="width:100%">
+      
+      <div class="product-card-text">
+        <p><a href="#">Necklace</a> with butterfly pendent</p>
+      </div>
+      
+      <div class="prize">
+        <h3>₹150</h3>
+      </div>
+      
+      <div class="product-card-buy-button">
+        <button  >Buy</button>
+        <button  ><a class="fa">&#xf07a;</a> Add to cart</button>
+    </div>
+    
+  </div>
+
+    <!-- ***********************************************************************************6 -->
+      <div class="product-card"  id="product-card" >
+        <img src="..//product images/Pearl and Black Beads.jpg"  style="width:100%">
+        
+       <div class="product-card-text">
+          <p><a href="#">Pearl Necklace</a> with butterfly pendent</p>
+      </div>
+
+      <div class="prize">
+        <h3>₹150</h3>
+      </div>
+
+      <div class="product-card-buy-button">
+        <button  >Buy</button>
+        <button  ><a class="fa">&#xf07a;</a> Add to cart</button>
+      </div>
+
+      </div>
+  </div>
+
+<!-- ***********************************************************************************************************************************************Testimonials -->
+
+<div id="testimonials">
+  <p style="padding-top:15px;align-self: center;font-size: 3srem; font-family: 'Roboto';font-weight: bold;font-size:xx-large;">TESTIMONIALS</p>
+</div>
+
+  <div id="testimonial-container">
+
+    <div id="part1" class="testimonial-parts">
+      <img style="height: 100%;width: 100%;" src="..//product images/Pearl Daisy.jpg">
+    </div>
+
+    <div id="part2" class="testimonial-parts">
+      <div>
+      <h1>Amazing!!</h1>
+      </div>
+      <div>
+      <p style="text-align: center;">these products are just amazing and so beautiful . I love how there is a variety in styles . 
+        The pink butterfly necklace is my favorite. Also the website is amazing 😂 , The developer did a good job </p>
+      </div>
+    </div>
+
+  </div>
+
+
+  
+<!-- login page  -->
+ <script>
+var modal = document.getElementById('page');
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                document.getElementById('SignUp').style.display="";
+                // document.getElementById('SignUp').style.display="none";
+            }
+        }       
+  </script>
+
+  <script>
+
+    function OnLoadLoginPage(){
+
+      document.getElementById('page').style.display="block";
+
+      
+    }
+    
+    function signinPage(){
+      Login
+      document.getElementById('SignUp').style.display="";
+      document.getElementById('Login').style.display="none" ;
+
+    }
+
+    function loginPage(){
+
+      document.getElementById('Login').style.display="";
+      document.getElementById('SignUp').style.display="none" ;
+
+    }
+  </script>
+  <!-- Login.js basically login page firebase authentication  -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+  <script src="..//folder javascript/login.js"></script>
+  <!-- slideshow script -->
+<script src="..//folder javascript/slideshow.js"></script>
+  <!-- Best-sellers-container script -->
+  
+</center>
+</body>
+</html>
