@@ -1,0 +1,161 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..//folder css/product_page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Document</title>
+  
+</head>
+<body style="background-color: #fce4ed;">
+    <center>
+
+<!-- **********************************************************************************************************************************************header  -->
+        <div id="home"> 
+          
+            <div id="heading">
+              <a href="..//folder html/vs.html"><img style="width: 4.5rem;height: 4.5rem;border-radius: 100%;" src="..//product images/logo.png" alt="logo"></a>                
+              <p style="font-size: 3rem;"> M A N A V A </p>
+              <div id="searchbar">
+                <input  type="search" placeholder="Search">
+                <button style="background-color: inherit;border: none;" type="submit"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+          
+          <div id="loginAndCart">
+            <button id="head-login-button" onclick="document.getElementById('page').style.display='block'">Log In</button>
+            <a style="font-size:24px; margin-right: 2rem;text-decoration: none;color: black;" href="#" class="fa" >&#xf07a; Cart</a>
+            </div>
+          </div>
+
+
+<!-- *************************************************************************************************************************************login page  -->
+
+  <div id="page">
+    <div class="container" id="container">
+      <div class="form-container log-in-container">
+        <form action="#" id="Login" > 
+          <!-- hi het Hello raveena mam just -->
+          <h1>Login</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fa fa-facebook fa-2x"></i></a>
+            <a href="#" class="social"><i class="fab fa fa-twitter fa-2x"></i></a>
+          </div>
+          <span>or use your account</span>
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <div style="display: flex;justify-content: space-between;width: 100%;margin-top: 5px;">
+            <button id="SignUp-page-button" onclick="signupPage()">Sign Up?</button>
+          <a href="#">Forgot your password?</a>
+        </div>
+          <button id="login-button" >Log In</button>
+        </form>
+  
+  <!-- ***********************************************************************************************************************************************SignUp -->
+  
+        <form action="#" id="SignUp" style="display:none;" > 
+          <h1>Sign Up</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fa fa-facebook fa-2x"></i></a>
+            <a href="#" class="social"><i class="fab fa fa-twitter fa-2x"></i></a>
+          </div>
+          <span>or use your account</span>
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <input type="mobile number" placeholder="Number" />
+          <div style="display: flex;justify-content: space-between;width: 100%;margin-top: 5px;">
+        </div>
+          <button id="SignUp-button" >SignUp</button>
+        </form>
+  
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-right">
+            <h1 style="color: black;">Welcome !!!</h1>
+            <p style="color: black;">Your favorite Instagram shop now on the Web </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- ****************************************************************************************************************************************************  -->
+
+  <div id="product_page_container">
+
+    <div id="product_imgs">
+        <div id="img_panel">
+
+            <div class="img_panel_boxs">
+                1
+            </div>
+
+            <div class="img_panel_boxs">
+                1
+            </div>
+
+            <div class="img_panel_boxs">
+                1
+            </div>
+
+        </div>
+        <div id="main_img">
+            <img src="..//product images/beaded.JPG">
+        </div>
+
+    </div>
+
+    <div id="product_detail">
+
+        <p> Scroll Down
+            The image will "stick" to the screen when you reach its scroll position.
+            
+            Scroll back up again to "remove" the sticky effect.
+            
+            Example text lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae 
+            scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. 
+            Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.
+        </p>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+  <!-- login page  -->
+ <script>
+  var modal = document.getElementById('page');
+          window.onclick = function(event) {
+              if (event.target == modal) {
+                  modal.style.display = "none";
+                  document.getElementById('Login').style.display="";
+                  // document.getElementById('SignUp').style.display="none";
+              }
+          }       
+    </script>
+  
+    <script>
+      function OnLoadLoginPage(){
+        document.getElementById('page').style.display="block"; 
+      }
+      function signupPage(){ 
+  document.getElementById('SignUp').style.display="";
+  document.getElementById('Login').style.display="none" ;
+  }
+    </script>
+<!-- slideshow script -->
+<script src="..//folder javascript/slideshow.js"></script>
+    </center>
+</body>
+</html>
